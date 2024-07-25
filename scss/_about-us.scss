@@ -1,0 +1,262 @@
+.about-us {
+  background-color: #fff8f5;
+  $gap: 45px;
+
+  &__top {
+    padding-top: 100px;
+  }
+
+  &__bottom {
+    $paddingTop: 144px;
+    $paddingBot: 125px;
+    padding-top: $paddingTop;
+    padding-bottom: $paddingBot;
+    display: flex;
+    justify-content: space-between;
+    gap: $gap;
+    height: fit-content;
+  }
+
+  &__column {
+    width: 100%;
+    &--left {
+      width: 54.4117647059%;
+    }
+
+    &--right {
+      width: calc(45.5882352941% - #{$gap});
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-family: "Cormorant Infant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0.2px;
+    color: #292e36;
+  }
+
+  &__paragraph {
+    margin-top: 15px;
+    padding-right: 33px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #555555;
+  }
+
+  &__progress {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__signature {
+    margin-top: 15px;
+  }
+
+  &__name {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #555555;
+  }
+
+  &__signature-svg {
+    margin-top: 20px;
+    width: 200px;
+    height: 110px;
+  }
+}
+
+.info {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  &__cell {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__icon-wrap {
+    width: 83px;
+    height: 83px;
+    background: #292e36;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 50%;
+    fill: #fff;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  &__caption {
+    font-family: "Cormorant Infant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0.2px;
+    color: #292e36;
+  }
+
+  &__text {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #555555;
+  }
+}
+
+@media (max-width: 1299px) {
+  .info {
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__content {
+      flex-direction: row;
+      align-items: end;
+      width: 100%;
+
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #aaa;
+        position: absolute;
+      }
+    }
+
+    &__caption {
+      &::before {
+        left: 0px;
+      }
+    }
+
+    &__text {
+      &::before {
+        right: 0px;
+      }
+    }
+
+    &__caption,
+    &__text {
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        height: 4px;
+        width: calc(100% + 10px);
+        background-color: #fff8f5;
+        position: absolute;
+        bottom: -1px;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .about-us {
+    &__bottom {
+      flex-direction: column;
+    }
+
+    &__column {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .about-us {
+    &__top {
+      padding-top: 60px;
+    }
+
+    &__bottom {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    &__signature {
+      margin-top: 30px;
+    }
+  }
+
+  .info {
+    &__content {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__caption,
+    &__text {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .about-us {
+    &__progress {
+      flex-direction: column;
+    }
+  }
+
+  .info {
+    &__cell {
+      flex-direction: column;
+    }
+
+    &__content {
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

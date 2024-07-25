@@ -1,0 +1,117 @@
+.popular-dishes {
+  padding-top: 120px;
+  padding-bottom: 140px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    @extend %textTwoLines;
+  }
+
+  &__hook {
+    margin-top: 12px;
+    font-family: "Cormorant Infant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    color: #292e36;
+  }
+
+  &__paragraph {
+    margin-top: 8px;
+    max-width: 760px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #555555;
+  }
+
+  &__link {
+    margin-top: 65px;
+    width: 255px;
+
+    @extend %button;
+  }
+}
+
+.dish-2 {
+  margin-top: 50px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 30px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__name-const {
+    font-family: "Cormorant Infant";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0.2px;
+    color: #292e36;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dcdcdc;
+  }
+
+  &__name {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__description {
+    margin-top: 15px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #555555;
+  }
+}
+
+@media (max-width: 1300px) {
+  .dish-2 {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+  }
+}
+
+@media (max-width: 690px) {
+  .dish-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TasteEat</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/smoothScroll.js" defer></script>
+    <script src="./js/reservationForm.js" type="module" defer></script>
+    <script src="./js/updatesSubForm.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="container header__container">
+            <div class="header__call">Call - 123 456 789</div>
+
+            <div class="logo">
+              <img src="./img/logo.png" alt="Logo" class="logo__img" />
+            </div>
+
+            <a href="#" class="header__reservation-btn">Reservation</a>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <div class="container header__container">
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="#hero" class="header__link">Home</a>
+                </li>
+
+                <li class="header__item">
+                  <a href="#about-us" class="header__link">About Us</a>
+                </li>
+
+                <li class="header__item">
+                  <a href="#menu" class="header__link">Our Menu</a>
+                </li>
+
+                <li class="header__item">
+                  <a href="#testimonial" class="header__link">Pages</a>
+                </li>
+
+                <li class="header__item">
+                  <a href="#blog" class="header__link">Blog</a>
+                </li>
+
+                <li class="header__item">
+                  <a href="#footer" class="header__link">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="socials">
+              <a class="socials__link" href="#">
+                <svg class="socials__icon">
+                  <use href="./img/svg/sprites.svg#instagram"></use>
+                </svg>
+              </a>
+
+              <a class="socials__link" href="#">
+                <svg class="socials__icon">
+                  <use href="./img/svg/sprites.svg#facebook"></use>
+                </svg>
+              </a>
+
+              <a class="socials__link" href="#">
+                <svg class="socials__icon">
+                  <use href="./img/svg/sprites.svg#twitter"></use>
+                </svg>
+              </a>
+
+              <a class="socials__link" href="#">
+                <svg class="socials__icon">
+                  <use href="./img/svg/sprites.svg#pinterest"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="hero" id="hero">
+          <div class="container hero__container">
+            <div class="hero__column hero__column--left">
+              <h1 class="hero__title">Welcome to<br />Restaurant</h1>
+
+              <p class="hero__paragraph">
+                The people, food and the prime locations make the perfect place good friends & family to come together and have great time.
+              </p>
+
+              <a href="#menu" class="hero__link">View Menu</a>
+            </div>
+            <div class="hero__column hero__column--right">
+              <img src="./img/hero-bg.png" alt="Hero background img" class="hero__bg-img" />
+            </div>
+          </div>
+        </section>
+
+        <section class="about-us" id="about-us">
+          <div class="container about-us__container">
+            <div class="about-us__top">
+              <div class="info__grid">
+                <div class="info__cell">
+                  <div class="info__icon-wrap">
+                    <svg class="info__icon">
+                      <use href="./img/svg/sprites.svg#location"></use>
+                    </svg>
+                  </div>
+
+                  <div class="info__content">
+                    <h2 class="info__caption">Locate Us</h2>
+                    <p class="info__text">Riverside 25, San Diego, California</p>
+                  </div>
+                </div>
+
+                <div class="info__cell">
+                  <div class="info__icon-wrap">
+                    <svg class="info__icon">
+                      <use href="./img/svg/sprites.svg#time"></use>
+                    </svg>
+                  </div>
+
+                  <div class="info__content">
+                    <h2 class="info__caption">Open Hours</h2>
+                    <p class="info__text">Mon To Fri 9:00 AM - 9:00 PM</p>
+                  </div>
+                </div>
+
+                <div class="info__cell">
+                  <div class="info__icon-wrap">
+                    <svg class="info__icon">
+                      <use href="./img/svg/sprites.svg#list"></use>
+                    </svg>
+                  </div>
+
+                  <div class="info__content">
+                    <h2 class="info__caption">Reservation</h2>
+                    <p class="info__text">restaurantate@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-us__bottom">
+              <div class="about-us__column about-us__column--left">
+                <img src="./img/about-us-bg.jpg" alt="Dining area" class="about-us__img" />
+              </div>
+
+              <div class="about-us__column about-us__column--right">
+                <h2 class="about-us__title">The Delicious Story</h2>
+
+                <p class="about-us__paragraph">
+                  The people, food and the prime locations make the perfect place for the friends & family to come together and have great time.
+                </p>
+
+                <div class="about-us__progress">
+                  <div class="about-us__first">
+                    <h2 class="about-us__title">2018</h2>
+
+                    <p class="about-us__paragraph">Plan for this restaurant to deliver healthy food.</p>
+                  </div>
+
+                  <div class="about-us__second">
+                    <h2 class="about-us__title">2022</h2>
+
+                    <p class="about-us__paragraph">Happily in the fourth year by fulfill the motto.</p>
+                  </div>
+                </div>
+
+                <div class="about-us__signature">
+                  <div class="about-us__name">JOSEFINE</div>
+
+                  <svg class="about-us__signature-svg">
+                    <use href="./img/svg/sprites.svg#signature"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="menu" id="menu">
+          <div class="container menu__container">
+            <div class="menu__column menu__column--left">
+              <h2 class="menu__title">Menu</h2>
+
+              <p class="menu__hook">Try Our Special dishes</p>
+
+              <p class="menu__paragraph">
+                Every time you perfectly dine with us, it should happy for great inspired food in an environment designed with individual touches unique to the
+                local area.
+              </p>
+
+              <div class="menu__img-wrap">
+                <img src="./img/menu-bg.jpg" alt="Pie" class="menu__img" />
+              </div>
+
+              <div class="menu__link">See all dishes</div>
+            </div>
+
+            <div class="menu__column menu__column--right">
+              <section class="menu__section">
+                <h3 class="menu__section-name">Starters</h3>
+
+                <ul class="dish">
+                  <li class="dish__item">
+                    <img src="./img/raw-scallops.png" alt="Raw Scallops from Erquy" class="dish__img" />
+                    <div class="dish__content">
+                      <div class="dish__info">
+                        <h4 class="dish__name">Raw Scallops from Erquy</h4>
+                        <p class="dish__recipe">Shuck the scallop to that used for oysters</p>
+                      </div>
+
+                      <div class="dish__line"></div>
+
+                      <div class="dish__cost">$40</div>
+                    </div>
+                  </li>
+
+                  <li class="dish__item">
+                    <img src="./img/spring-roll.png" alt="Spring Roll" class="dish__img" />
+                    <div class="dish__content">
+                      <div class="dish__info">
+                        <h4 class="dish__name">Spring Roll</h4>
+                        <p class="dish__recipe">Add oil to a hot pan spring onion whites</p>
+                      </div>
+
+                      <div class="dish__line"></div>
+
+                      <div class="dish__cost">$20</div>
+                    </div>
+                  </li>
+
+                  <li class="dish__item">
+                    <img src="./img/french-onion-soup.png" alt="French Onion Soup" class="dish__img" />
+                    <div class="dish__content">
+                      <div class="dish__info">
+                        <h4 class="dish__name">French Onion Soup</h4>
+                        <p class="dish__recipe">Wheat flour, apple cider vinegar, bread</p>
+                      </div>
+
+                      <div class="dish__line"></div>
+
+                      <div class="dish__cost">$25</div>
+                    </div>
+                  </li>
+
+                  <li class="dish__item">
+                    <img src="./img/tomato-bruschetta.png" alt="Tomato Bruschetta" class="dish__img" />
+                    <div class="dish__content">
+                      <div class="dish__info">
+                        <h4 class="dish__name">Tomato Bruschetta</h4>
+                        <p class="dish__recipe">Bread, olive oil, garlic, black pepper</p>
+                      </div>
+
+                      <div class="dish__line"></div>
+
+                      <div class="dish__cost">$30</div>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="menu__section">
+                <h3 class="menu__section-name">Main Dish</h3>
+
+                <ul class="dish">
+                  <li class="dish__item">
+                    <img src="./img/grilled-salmon.png" alt="Grilled Salmon with Dill Sauce" class="dish__img" />
+                    <div class="dish__content">
+                      <div class="dish__info">
+                        <h4 class="dish__name">Grilled Salmon with Dill Sauce</h4>
+                        <p class="dish__recipe">Brown sugar, salmon fillet, Dijon mustard</p>
+                      </div>
+
+                      <div class="dish__line"></div>
+
+                      <div class="dish__cost">$40</div>
+                    </div>
+                  </li>
+
+                  <li class="dish__item">
+                    <img src="./img/roast-beef.png" alt="Roast Beef with Vegetable" class="dish__img" />
+                    <div class="dish__content">
+                      <div class="dish__info">
+                        <h4 class="dish__name">Roast Beef with Vegetable</h4>
+                        <p class="dish__recipe">Green beans, rib eye, olive oil, beef</p>
+                      </div>
+
+                      <div class="dish__line"></div>
+
+                      <div class="dish__cost">$20</div>
+                    </div>
+                  </li>
+
+                  <li class="dish__item">
+                    <img src="./img/marrkesh-vegan-curruy.png" alt="Marrkesh Vegetetarian Curruy" class="dish__img" />
+                    <div class="dish__content">
+                      <div class="dish__info">
+                        <h4 class="dish__name">Marrkesh Vegetetarian Curruy</h4>
+                        <p class="dish__recipe">Sweet potato, eggplant, garbanzo bean</p>
+                      </div>
+
+                      <div class="dish__line"></div>
+
+                      <div class="dish__cost">$25</div>
+                    </div>
+                  </li>
+
+                  <li class="dish__item">
+                    <img src="./img/spicy-vegan-curry.png" alt="Spicy Vegan Potato Curry" class="dish__img" />
+                    <div class="dish__content">
+                      <div class="dish__info">
+                        <h4 class="dish__name">Spicy Vegan Potato Curry</h4>
+                        <p class="dish__recipe">Coconut milk, beans, potatoes, curry powder</p>
+                      </div>
+
+                      <div class="dish__line"></div>
+
+                      <div class="dish__cost">$35</div>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="menu__section">
+                <h3 class="menu__section-name">Dessert</h3>
+
+                <ul class="dish">
+                  <li class="dish__item">
+                    <img src="./img/apple-pie.png" alt="Apple Pie with Cream" class="dish__img" />
+                    <div class="dish__content">
+                      <div class="dish__info">
+                        <h4 class="dish__name">Apple Pie with Cream</h4>
+                        <p class="dish__recipe">Whipping cream, egg white, cinnamon</p>
+                      </div>
+
+                      <div class="dish__line"></div>
+
+                      <div class="dish__cost">$15</div>
+                    </div>
+                  </li>
+
+                  <li class="dish__item">
+                    <img src="./img/lemon-meringue-pie.png" alt="Lemon Meringue Pie" class="dish__img" />
+                    <div class="dish__content">
+                      <div class="dish__info">
+                        <h4 class="dish__name">Lemon Meringue Pie</h4>
+                        <p class="dish__recipe">Frozen pie crust, meringue, lemon</p>
+                      </div>
+
+                      <div class="dish__line"></div>
+
+                      <div class="dish__cost">$30</div>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonial" id="testimonial">
+          <div class="container testimonial__container">
+            <h2 class="testimonial__title">Testimonial</h2>
+
+            <p class="testimonial__hook">our clients say</p>
+
+            <p class="testimonial__paragraph">We love to hear from customers, so please leave a comment or say hello in an email.</p>
+
+            <div class="slider__wrap">
+              <div class="slider__body">
+                <div class="slider__track">
+                  <div class="slide">
+                    <div class="slide__top">
+                      <div class="slide__avatar">
+                        <img src="./img/t-photo-1.jpg" alt="avatar photo" class="slide__avatar-img" />
+
+                        <div class="slide__quotes">
+                          <svg class="slide__quotes-svg">
+                            <use href="./img/svg/sprites.svg#quotes"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="slide__info">
+                        <p class="slide__name">Natasha D</p>
+
+                        <p class="slide__city">Newyork</p>
+                      </div>
+                    </div>
+
+                    <div class="slide__bottom">
+                      <p class="slide__paragraph">
+                        They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="slide slide--center">
+                    <div class="slide__top">
+                      <div class="slide__avatar">
+                        <img src="./img/t-photo-2.jpg" alt="avatar photo" class="slide__avatar-img" />
+
+                        <div class="slide__quotes">
+                          <svg class="slide__quotes-svg">
+                            <use href="./img/svg/sprites.svg#quotes"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="slide__info">
+                        <p class="slide__name">Jack Sparrow</p>
+
+                        <p class="slide__city">Salt Lake City</p>
+                      </div>
+                    </div>
+
+                    <div class="slide__bottom">
+                      <p class="slide__paragraph">
+                        I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its
+                        own.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="slide__top">
+                      <div class="slide__avatar">
+                        <img src="./img/t-photo-3.jpg" alt="avatar photo" class="slide__avatar-img" />
+
+                        <div class="slide__quotes">
+                          <svg class="slide__quotes-svg">
+                            <use href="./img/svg/sprites.svg#quotes"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="slide__info">
+                        <p class="slide__name">Martin</p>
+
+                        <p class="slide__city">San Diego</p>
+                      </div>
+                    </div>
+
+                    <div class="slide__bottom">
+                      <p class="slide__paragraph">
+                        Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are
+                        yummy.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="slide__top">
+                      <div class="slide__avatar">
+                        <img src="./img/t-photo-4.jpg" alt="avatar photo" class="slide__avatar-img" />
+
+                        <div class="slide__quotes">
+                          <svg class="slide__quotes-svg">
+                            <use href="./img/svg/sprites.svg#quotes"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="slide__info">
+                        <p class="slide__name">Jane</p>
+
+                        <p class="slide__city">Los Angeles</p>
+                      </div>
+                    </div>
+
+                    <div class="slide__bottom">
+                      <p class="slide__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque eos mollitia labore obcaecati.</p>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="slide__top">
+                      <div class="slide__avatar">
+                        <img src="./img/t-photo-5.jpg" alt="avatar photo" class="slide__avatar-img" />
+
+                        <div class="slide__quotes">
+                          <svg class="slide__quotes-svg">
+                            <use href="./img/svg/sprites.svg#quotes"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="slide__info">
+                        <p class="slide__name">Kate</p>
+
+                        <p class="slide__city">Boston</p>
+                      </div>
+                    </div>
+
+                    <div class="slide__bottom">
+                      <p class="slide__paragraph">
+                        Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis maxime veniam laborum ipsam!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="slide__top">
+                      <div class="slide__avatar">
+                        <img src="./img/t-photo-6.jpg" alt="avatar photo" class="slide__avatar-img" />
+
+                        <div class="slide__quotes">
+                          <svg class="slide__quotes-svg">
+                            <use href="./img/svg/sprites.svg#quotes"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="slide__info">
+                        <p class="slide__name">Michaek</p>
+
+                        <p class="slide__city">Newyork</p>
+                      </div>
+                    </div>
+
+                    <div class="slide__bottom">
+                      <p class="slide__paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam exercitationem veniam ipsum at, nobis blanditiis!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="slide__top">
+                      <div class="slide__avatar">
+                        <img src="./img/t-photo-7.jpg" alt="avatar photo" class="slide__avatar-img" />
+
+                        <div class="slide__quotes">
+                          <svg class="slide__quotes-svg">
+                            <use href="./img/svg/sprites.svg#quotes"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="slide__info">
+                        <p class="slide__name">Ann</p>
+
+                        <p class="slide__city">Washington</p>
+                      </div>
+                    </div>
+
+                    <div class="slide__bottom">
+                      <p class="slide__paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, non unde pariatur praesentium quas neque sequi asperiores similique
+                        nam iure?
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="slide">
+                    <div class="slide__top">
+                      <div class="slide__avatar">
+                        <img src="./img/t-photo-8.jpg" alt="avatar photo" class="slide__avatar-img" />
+
+                        <div class="slide__quotes">
+                          <svg class="slide__quotes-svg">
+                            <use href="./img/svg/sprites.svg#quotes"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="slide__info">
+                        <p class="slide__name">Alex</p>
+
+                        <p class="slide__city">Houston</p>
+                      </div>
+                    </div>
+
+                    <div class="slide__bottom">
+                      <p class="slide__paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Ex, laudantium. At saepe doloribus fuga est.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider__arrows">
+                  <div class="slider__arrow slider__arrow--left">
+                    <div class="slider__arrow-top"></div>
+                    <div class="slider__arrow-bottom"></div>
+                  </div>
+
+                  <div class="slider__arrow slider__arrow--right">
+                    <div class="slider__arrow-top"></div>
+                    <div class="slider__arrow-bottom"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider__bullets"></div>
+            </div>
+          </div>
+
+          <div class="testimonial-bg">
+            <img class="testimonial-bg__img" src="./img/testimonial-bg.jpg" alt="testimonial bg" />
+          </div>
+        </section>
+
+        <section class="offers" id="offers">
+          <div class="container offers__container">
+            <h2 class="offers__title">offers</h2>
+
+            <p class="offers__hook">Our Offer dishes</p>
+
+            <p class="offers__paragraph">
+              Our chefs create melt-in-your-mouth dishes that'll satiate even the fussiest eaters now the dishes are in offers use it based on hunger.
+            </p>
+
+            <ul class="offers__list">
+              <li class="offer offer__burger">
+                <div class="offer__content">
+                  <div class="offer-price">
+                    <p class="offer-price__text">
+                      <span class="offer-price__text--top">Only</span>
+                      $10
+                    </p>
+
+                    <div class="offer-price__bg">
+                      <svg class="offer-price__bg--front">
+                        <use href="./img/svg/sprites.svg#offer-cost"></use>
+                      </svg>
+
+                      <svg class="offer-price__bg--back">
+                        <use href="./img/svg/sprites.svg#offer-cost"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <p class="offer__sale">50% Offer Going</p>
+
+                  <h3 class="offer__name">Chicken Burger</h3>
+
+                  <p class="offer__description">Chicken burger with the tasty toppings and leaves.</p>
+                </div>
+
+                <div class="offer__img-container">
+                  <img src="./img/offers-offer-img-1.png" alt="" class="offer__img" />
+                </div>
+              </li>
+
+              <li class="offer offer__pizza">
+                <div class="offer__content">
+                  <div class="offer-price">
+                    <p class="offer-price__text">
+                      <span class="offer-price__text--top">Only</span>
+                      $9
+                    </p>
+
+                    <div class="offer-price__bg">
+                      <svg class="offer-price__bg--front">
+                        <use href="./img/svg/sprites.svg#offer-cost"></use>
+                      </svg>
+
+                      <svg class="offer-price__bg--back">
+                        <use href="./img/svg/sprites.svg#offer-cost"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <p class="offer__sale">50% Offer Going</p>
+
+                  <h3 class="offer__name">Chicken Pizza</h3>
+
+                  <p class="offer__description">Pizza with multiple flavor and the toping are mixed.</p>
+                </div>
+
+                <div class="offer__img-container">
+                  <img src="./img/offers-offer-img-2.png" alt="" class="offer__img" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="popular-dishes" id="popular-dishes">
+          <div class="container popular-dishes__container">
+            <h2 class="popular-dishes__title">menu</h2>
+
+            <p class="popular-dishes__hook">Popular Dishes</p>
+
+            <p class="popular-dishes__paragraph">
+              There is a game between the waiters in restaurant to see who serves the food to each table fastest. That led to attempting the Guinness Record.
+            </p>
+
+            <ul class="dish-2">
+              <li class="dish-2__item">
+                <div class="dish-2__img-container">
+                  <img src="./img/popular-dishes-img-1.jpg" alt="Chicken Manjoori" class="dish-2__img" />
+                </div>
+
+                <div class="dish-2__content">
+                  <div class="dish-2__name-const">
+                    <h3 class="dish-2__name">Chicken Manjoori</h3>
+                    <div class="dish-2__cost">$15</div>
+                  </div>
+
+                  <p class="dish-2__description">Dish relished by all age groups as a starter dish at parties.</p>
+                </div>
+              </li>
+
+              <li class="dish-2__item">
+                <div class="dish-2__img-container">
+                  <img src="./img/popular-dishes-img-2.jpg" alt="Hotdog" class="dish-2__img" />
+                </div>
+
+                <div class="dish-2__content">
+                  <div class="dish-2__name-const">
+                    <h3 class="dish-2__name">Hotdog</h3>
+                    <div class="dish-2__cost">$10</div>
+                  </div>
+
+                  <p class="dish-2__description">Grilled sausage served in the slit of a partially sliced bun.</p>
+                </div>
+              </li>
+
+              <li class="dish-2__item">
+                <div class="dish-2__img-container">
+                  <img src="./img/popular-dishes-img-3.jpg" alt="Fresh Salmon" class="dish-2__img" />
+                </div>
+
+                <div class="dish-2__content">
+                  <div class="dish-2__name-const">
+                    <h3 class="dish-2__name">Fresh Salmon</h3>
+                    <div class="dish-2__cost">$5</div>
+                  </div>
+
+                  <p class="dish-2__description">Beat the health blues with our Super Immune Blue Juice Recipe.</p>
+                </div>
+              </li>
+
+              <li class="dish-2__item">
+                <div class="dish-2__img-container">
+                  <img src="./img/popular-dishes-img-4.jpg" alt="Veg Burger" class="dish-2__img" />
+                </div>
+
+                <div class="dish-2__content">
+                  <div class="dish-2__name-const">
+                    <h3 class="dish-2__name">Veg Burger</h3>
+                    <div class="dish-2__cost">$10</div>
+                  </div>
+
+                  <p class="dish-2__description">Burgers may be made from ingredients like beans.</p>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#" class="popular-dishes__link">See all dishes</a>
+          </div>
+        </section>
+
+        <section class="services" id="services">
+          <div class="container services__container">
+            <div class="services__content">
+              <h2 class="services__title">What we offer</h2>
+
+              <p class="services__hook">Our Great Services</p>
+
+              <p class="services__paragpraph">
+                The atmosphere set the stage. It’s about more than just a dining room away from your home. food takes the spotlight as guests.
+              </p>
+            </div>
+
+            <div class="services__cards">
+              <ul class="cards">
+                <li class="cards__item">
+                  <img src="./img/svg/services-img-1.svg" alt="calendar" class="cards__img" />
+                  <div class="cards__text">Opened 24/7</div>
+                </li>
+
+                <li class="cards__item">
+                  <img src="./img/svg/services-img-2.svg" alt="menu" class="cards__img" />
+                  <div class="cards__text">Special Menus</div>
+                </li>
+
+                <li class="cards__item">
+                  <img src="./img/svg/services-img-3.svg" alt="motorbike" class="cards__img" />
+                  <div class="cards__text">Home Delivery</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="blog" id="blog">
+          <div class="container blog__container">
+            <h2 class="blog__title">Blog</h2>
+
+            <p class="blog__hook">Be First Who Read News</p>
+
+            <p class="blog__paragraph">Explore the latest stories about our dishes, offers, events and future plans here.</p>
+
+            <div class="blog__articles">
+              <article class="article article-1">
+                <div class="article__img-container">
+                  <a href="#" class="article__link">View More</a>
+
+                  <div class="article__overlay"></div>
+                </div>
+
+                <div class="article__content">
+                  <div class="article__info">
+                    <span class="article__theme">Delicious</span>
+
+                    <span class="article__date">March 19, 2022</span>
+                  </div>
+
+                  <h3 class="article__title">The Legend of US Cuisine: The Story of Hungry People</h3>
+
+                  <p class="article__paragraph">
+                    Capitalize on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the
+                    food quality.
+                  </p>
+                </div>
+              </article>
+
+              <article class="article article-2">
+                <div class="article__img-container">
+                  <a href="#" class="article__link">View More</a>
+
+                  <div class="article__overlay"></div>
+                </div>
+
+                <div class="article__content">
+                  <div class="article__info">
+                    <span class="article__theme">Cooking</span>
+
+                    <span class="article__date">March 19, 2022</span>
+                  </div>
+
+                  <h3 class="article__title">The Most Popular Delicious Food of Mediterranean Cuisine</h3>
+
+                  <p class="article__paragraph">
+                    Strategies on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the
+                    food quality.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="reservation" id="reservation">
+          <div class="reservation__container">
+            <h2 class="reservation__title">reservation</h2>
+
+            <p class="reservation__hook">Book Your Table</p>
+
+            <form class="book-form">
+              <div class="book-form__inputs">
+                <div class="book-form__input-box">
+                  <label for="book-form__name" class="book-form__label">Name</label>
+                  <input type="text" id="book-form__name" class="book-form__input book-form__name" />
+                </div>
+
+                <div class="book-form__input-box">
+                  <label for="book-form__email" class="book-form__label">Email</label>
+                  <input type="email" id="book-form__email" class="book-form__input book-form__email" />
+                </div>
+
+                <div class="book-form__input-box">
+                  <label for="book-form__persons" class="book-form__label">Persons</label>
+                  <input type="text" id="book-form__persons" class="book-form__input book-form__persons" />
+                </div>
+
+                <div class="book-form__input-box">
+                  <label for="book-form__time" class="book-form__label">Timing</label>
+                  <input type="text" id="book-form__time" class="book-form__input book-form__time" />
+                </div>
+
+                <div class="book-form__input-box">
+                  <label for="book-form__date" class="book-form__label">Date</label>
+                  <input type="text" id="book-form__date" class="book-form__input book-form__date" />
+                </div>
+              </div>
+
+              <button class="book-form__submit" type="submit">Book A Table</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__hashtag">#TheTastEat</div>
+
+            <div class="logo">
+              <img class="logo__img" src="./img/logo.png" alt="Logo" />
+            </div>
+
+            <div class="socials">
+              <a class="socials__link" href="#">
+                <svg class="socials__icon">
+                  <use href="./img/svg/sprites.svg#instagram"></use>
+                </svg>
+              </a>
+
+              <a class="socials__link" href="#">
+                <svg class="socials__icon">
+                  <use href="./img/svg/sprites.svg#facebook"></use>
+                </svg>
+              </a>
+
+              <a class="socials__link" href="#">
+                <svg class="socials__icon">
+                  <use href="./img/svg/sprites.svg#twitter"></use>
+                </svg>
+              </a>
+
+              <a class="socials__link" href="#">
+                <svg class="socials__icon">
+                  <use href="./img/svg/sprites.svg#pinterest"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__mid">
+            <div class="footer__contact">
+              <h2 class="footer__title">Contact</h2>
+
+              <ul class="footer__list">
+                <li class="footer__item footer__adress">5 Rue Dalou, 75015 Paris</li>
+
+                <li class="footer__item footer__phone footer__item--gold-color">+123 456 789</li>
+
+                <li class="footer__item footer__email footer__item--gold-color">
+                  <a class="footer__link" href="#">josefin@mail.com</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__updates">
+              <p class="footer__paragraph">Join our mailing list for updates, Get news & offers events.</p>
+
+              <form class="updates-form">
+                <div class="updates-form__input-box">
+                  <label class="updates-form__label" for="updates-form__email">Email</label>
+                  <input type="email" id="updates-form__email" class="updates-form__input updates-form__email" />
+                  <button class="updates-form__submit" type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="footer__working-hours">
+              <h2 class="footer__title">Working Hours</h2>
+
+              <ul class="footer__list">
+                <li class="footer__item"><span class="footer__item--gold-color footer__item--space">Mon – Fri:</span>7.00am – 6.00pm</li>
+
+                <li class="footer__item"><span class="footer__item--gold-color footer__item--space">Sat:</span>7.00am – 6.00pm</li>
+
+                <li class="footer__item"><span class="footer__item--gold-color footer__item--space">Sun:</span>8.00am – 6.00pm</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="full-width-line"></div>
+
+        <div class="container">
+          <div class="footer__bottom">
+            <p class="footer__copyright">
+              &copy;Copyright - TastEat | Designed by <a href="#" class="footer__link">VictorFlow</a> - Powered by
+              <a href="#" class="footer__link">Webflow</a>
+            </p>
+
+            <ul class="footer__list-2">
+              <li class="footer__item-2">Styleguide</li>
+              <li class="footer__item-2">Licenses</li>
+              <li class="footer__item-2">Protected</li>
+              <li class="footer__item-2">Not Found</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/slider.js"></script>
+  </body>
+</html>

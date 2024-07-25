@@ -1,0 +1,144 @@
+/* josefin-sans-regular - latin */
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/josefin-sans-v24-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/josefin-sans-v24-latin-regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/josefin-sans-v24-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/josefin-sans-v24-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/josefin-sans-v24-latin-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/josefin-sans-v24-latin-regular.svg#JosefinSans") format("svg"); /* Legacy iOS */
+}
+
+/* cormorant-infant-regular - latin */
+@font-face {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/cormorant-infant-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/cormorant-infant-v16-latin-regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/cormorant-infant-v16-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/cormorant-infant-v16-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/cormorant-infant-v16-latin-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/cormorant-infant-v16-latin-regular.svg#CormorantInfant") format("svg"); /* Legacy iOS */
+}
+/* cormorant-infant-700 - latin */
+@font-face {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/cormorant-infant-v16-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/cormorant-infant-v16-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/cormorant-infant-v16-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/cormorant-infant-v16-latin-700.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/cormorant-infant-v16-latin-700.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/cormorant-infant-v16-latin-700.svg#CormorantInfant") format("svg"); /* Legacy iOS */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 100vw; // 1440px
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  &__icon {
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      fill: #e1b168;
+    }
+  }
+}
+
+%button {
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #e1b168;
+  transition: 0.2s;
+  cursor: pointer;
+
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  color: #e1b168;
+  &:visited,
+  &:active {
+    color: #e1b168;
+  }
+
+  &:hover {
+    background-color: #e1b168;
+    color: #292e36;
+  }
+}
+
+%textTwoLines {
+  height: 29px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 5px;
+
+  border-top: 1px solid #e1b168;
+  border-bottom: 1px solid #e1b168;
+}
+
+@media (max-width: 1439px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@import "_header.scss";
+@import "_hero.scss";
+@import "_about-us.scss";
+@import "_menu.scss";
+@import "_testimonial.scss";
+@import "_offers.scss";
+@import "_popular-dishes.scss";
+@import "_services.scss";
+@import "_blog.scss";
+@import "_reservation.scss";
+@import "_footer.scss";

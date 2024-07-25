@@ -1,0 +1,241 @@
+.offers {
+  padding-top: 140px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    @extend %textTwoLines;
+  }
+
+  &__hook {
+    margin-top: 12px;
+    font-family: "Cormorant Infant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    color: #292e36;
+  }
+
+  &__paragraph {
+    margin-top: 8px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #555555;
+  }
+
+  &__list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 30px;
+  }
+}
+
+.offer {
+  flex: 1;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 68px 40px 45px;
+
+  &__content {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    width: 250px;
+  }
+
+  &__sale {
+    margin-top: 43px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    color: #292e36;
+
+    width: fit-content;
+    padding-top: 5px;
+    border-top: 1px solid #292e36;
+    border-bottom: 1px solid #292e36;
+  }
+
+  &__name {
+    margin-top: 8px;
+    font-family: "Cormorant Infant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #292e36;
+  }
+
+  &__description {
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #555555;
+  }
+
+  &__img-container {
+    width: 325px;
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__burger {
+    background-image: url("../img/offers-offer-bg-1.jpg");
+
+    .offer-price {
+      &__text {
+        color: #292e36;
+        &--top {
+          color: #292e36;
+        }
+      }
+
+      &__bg {
+        &--front {
+          fill: #ffffff;
+        }
+
+        &--back {
+          fill: #82b4b4;
+        }
+      }
+    }
+  }
+
+  &__pizza {
+    background-image: url("../img/offers-offer-bg-2.jpg");
+
+    .offer-price {
+      &__text {
+        color: #fff;
+        &--top {
+          color: #fff;
+        }
+      }
+
+      &__bg {
+        &--front {
+          fill: #292e36;
+        }
+
+        &--back {
+          fill: #bbbbbb;
+        }
+      }
+    }
+  }
+}
+
+.offer-price {
+  width: fit-content;
+  position: relative;
+  width: 150px;
+  height: 94px;
+
+  &__text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Cormorant Infant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 0.2px;
+
+    &--top {
+      position: absolute;
+      top: 15px;
+
+      font-family: "Josefin Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 10px;
+      letter-spacing: 0.15px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &--front {
+      position: relative;
+      z-index: 2;
+    }
+
+    &--back {
+      position: absolute;
+      left: -4px;
+      top: 2px;
+      z-index: 1;
+    }
+  }
+}
+
+@media (max-width: 1361px) {
+  .offer {
+    flex-direction: column;
+    gap: 20px;
+
+    &__content {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__img-container {
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .offers {
+    &__list {
+      flex-direction: column;
+    }
+  }
+}
